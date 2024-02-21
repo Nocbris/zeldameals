@@ -1,0 +1,27 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  gamename: MyString
+  image: MyText
+  gender: MyString
+  preparation_time: MyString
+  cooking_time: MyString
+  timeout: MyString
+  numberpeople: 1
+  description: MyText
+  ingredients: MyText
+  preparation_steps: MyText
+
+two:
+  name: MyString
+  gamename: MyString
+  image: MyText
+  gender: MyString
+  preparation_time: MyString
+  cooking_time: MyString
+  timeout: MyString
+  numberpeople: 1
+  description: MyText
+  ingredients: MyText
+  preparation_steps: MyText
