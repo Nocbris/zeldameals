@@ -4,11 +4,11 @@
   <div><%= link_to "Modifier la recette", edit_recipe_path(@recipe) %>
   <%= link_to "Retour aux recettes", recipes_path %></div>
 
-  <div><%= button_to "Effacer la recette", (@recipe), method: :delete 
+  <div><%= button_to "Effacer la recette", (@recipe), method: :delete
       confirm: "Voulez-vous vraiment supprimer cette recette ?"%></div>
 
 <h2>Commentaires</h2>
-<%= render @recipes.comment %>
+<%= render @recipes.comments %>
 
 <h2>Ajouter un commentaire:</h2>
-<%= render 'comment/form' %>
+<%= render 'comments/form' %>
