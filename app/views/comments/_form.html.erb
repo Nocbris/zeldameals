@@ -1,7 +1,9 @@
-<%= form_with model: [ @recipe, @recipe.comments.build ] do |form| %>
+<%= form_with model: @recipe.comments.build do |form| %>
+
+  <%= form.hidden_field :recipe_id %>
   <p>
-    <%= form.label :comments %><br>
-    <%= form.text_field :comments %>
+    <%= form.label :title %><br>
+    <%= form.text_field :title %>
   </p>
   <p>
     <%= form.label :body %><br>

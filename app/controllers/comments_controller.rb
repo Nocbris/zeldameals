@@ -1,12 +1,11 @@
 class CommentsController < ApplicationController
     def create
-      @recipe = Recipe.find(params[:recipe_id])
-      @comment = @recipe.comments.create(comment_params)
-      redirect_to recipe_path(@recipe)
+      @comment = Comment.create(comment_params)
+      redirect_to @comment.recipe
     end
   
     private
       def comment_params
-        params.require(:comment).permit(:commenter, :body)
+        params.require(:comment).permit(:title, :body, :recipe_id)
       end
   end
