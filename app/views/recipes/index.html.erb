@@ -1,11 +1,19 @@
-<p style="color: green"><%= notice %></p>
 
-<div id="recipes">
+<section class="description">
+  <h2>À propos</h2>
+  <p class="header-copy">Zeldameals, le guide ultime pour cuisiner des délices dignes des héros de Hyrule. Parcourez notre vaste collection de recettes inspirées des jeux Zelda, des plats réconfortants des villages aux délices exotiques. Que vous soyez un amateur de cuisine ou un aventurier culinaire intrépide, Zeldameals vous offre la possibilité de recréer ces mets mythiques dans votre propre cuisine. En plus de notre vaste bibliothèque de recettes inspirées des jeux Zelda, nous vous invitons à créer vos propre recettes. Créez, partagez et explorez des recettes uniques inspirées de l'univers riche et fantastique de Zelda.
+</section>
+<h2>Les recettes</h2>
+<div class="row">
   <% @recipes.each do |recipe| %>
-    <%= render recipe %>
-    <p>
-      <%= link_to "Voir la recette", recipe %>
-    </p>
+    <div class="col-lg-3 mb-4">
+      <div class="card">
+        <img class="card-img-top" src="<%= recipe.image %>">
+        <div class="card-body">
+          <%= link_to recipe.name, recipe, class: 'stretched-link' %>
+        </div>
+      </div>
+    </div>
   <% end %>
 </div>
 

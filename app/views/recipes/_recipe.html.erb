@@ -1,54 +1,58 @@
-<div id="<%= dom_id recipe %>">
-  <p>
-    <strong>Nom de la recette:</strong>
-    <%= recipe.name %>
-  </p>
+<div class="row">
+  <div class="col-lg-6">
+    <img class="img-fluid" src=" <%= recipe.image %>">
+  </div>
+  <div class="col-lg-6">
+    <p>
+      <strong>Nom de la recette:</strong>
+      <%= recipe.name %>
+    </p>
 
-  <p>
-    <strong>Nom du jeu:</strong>
-    <%= recipe.gamename %>
-  </p>
+    <p>
+      <strong>Nom du jeu:</strong>
+      <%= recipe.gamename %>
+    </p>
 
-  <p>
-    <strong>Type de recette:</strong>
-    <%= recipe.gender %>
-  </p>
+    <p>
+      <strong>Type de recette:</strong>
+      <%= recipe.gender %>
+    </p>
 
-  <img class="img_rct" src=" <%= recipe.image %>">
- 
-  <p>
-    <strong>Temps de preparation:</strong>
-    <%= recipe.preparation_time %>
-  </p>
 
-  <p>
-    <strong>Temps de cuisson:</strong>
-    <%= recipe.cooking_time %>
-  </p>
+    <p>
+      <strong>Temps de preparation:</strong>
+      <%= recipe.preparation_time %>
+    </p>
 
-  <p>
-    <strong>Temps de repos:</strong>
-    <%= recipe.timeout %>
-  </p>
+    <p>
+      <strong>Temps de cuisson:</strong>
+      <%= recipe.cooking_time %>
+    </p>
 
-  <p>
-    <strong>Nombre de personnes:</strong>
-    <%= recipe.numberpeople %>
-  </p>
+    <p>
+      <strong>Temps de repos:</strong>
+      <%= recipe.timeout %>
+    </p>
 
-  <p>
-    <strong>Description:</strong>
-    <%= recipe.description %>
-  </p>
+    <p>
+      <strong>Nombre de personnes:</strong>
+      <%= recipe.numberpeople %>
+    </p>
 
-  <p>
-    <strong>Ingredients:</strong>
-    <%= recipe.ingredients %>
-  </p>
+    <p>
+      <strong>Description:</strong>
+      <%= recipe.description %>
+    </p>
 
-  <p>
-    <strong>Etapes de preparation:</strong>
-    <ul><%= recipe.preparation_steps %>
-  </p>
+    <p>
+      <strong>Ingredients:</strong>
+      <%= recipe.ingredients %>
+    </p>
 
+    <p>
+      <strong>Etapes de preparation:</strong>
+      <ul><%= recipe.preparation_steps %>
+    </p>
+
+  </div>
 </div>

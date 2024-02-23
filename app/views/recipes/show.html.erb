@@ -1,11 +1,12 @@
-<p style="color: green"><%= notice %></p>
+<h1><%= @recipe.name %></h1>
 
+<p style="color: green"><%= notice %></p>
 <%= render @recipe %>
 
-  <div><%= link_to "Modifier la recette", edit_recipe_path(@recipe) %>
-  <%= link_to "Retour aux recettes", recipes_path %></div>
+<div><%= link_to "Modifier la recette", edit_recipe_path(@recipe) %>
+<%= link_to "Retour aux recettes", recipes_path %></div>
 
-  <div><%= button_to "Effacer la recette", (@recipe), method: :delete %></div>
+<div><%= button_to "Effacer la recette", (@recipe), method: :delete %></div>
 
 <div class= "Commentaires">
 <h2>Commentaires<h2>
