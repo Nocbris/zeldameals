@@ -1,10 +1,10 @@
-<h3>Editing recipe</h3>
+<h3>Editer la recette</h3>
 
 <%= render "form", recipe: @recipe %>
 
 <br>
 
 <div>
-  <%= link_to "Voir la recette", @recipe %> |
-  <%= link_to "Retour aux recettes", recipes_path %>
+  <%= link_to "Voir la recette", @recipe, class: "custom-button2" %> |
+  <%= link_to "Retour aux recettes", recipes_path, class: "custom-button2" %>
 </div>
