@@ -1,13 +1,11 @@
 <p style="color: green"><%= notice %></p>
 
 <%= render @recipe %>
-<ul>
-  <li><%= link_to "Modifier la recette", edit_recipe_path(@recipe) %></li>
-  <li><%= link_to "Retour aux recettes", recipes_path %></li>
+  <div><%= link_to "Modifier la recette", edit_recipe_path(@recipe) %>
+  <%= link_to "Retour aux recettes", recipes_path %></div>
 
-  <li><%= button_to "Effacer la recette", (@recipe), turbo_method: :delete 
-      turbo_confirm: "Voulez-vous vraiment supprimer cette recette ?"%></li>
-</ul>
+  <div><%= button_to "Effacer la recette", (@recipe), method: :delete 
+      confirm: "Voulez-vous vraiment supprimer cette recette ?"%></div>
 
 <h2>Commentaires</h2>
 <%= render @article.comments %>

@@ -1,8 +1,8 @@
 <div id="<%= dom_id recipe %>">
-  <p>
+  <h1>
     <strong>Nom de la recette:</strong>
     <%= recipe.name %>
-  </p>
+  </h1>
 
   <p>
     <strong>Nom du jeu:</strong>
@@ -14,10 +14,8 @@
     <%= recipe.gender %>
   </p>
 
-  <img>
-  <img class="img_rct" src=" <%= recipe.image %>"
-  </img>
-
+  <img class="img_rct" src=" <%= recipe.image %>">
+ 
   <p>
     <strong>Temps de preparation:</strong>
     <%= recipe.preparation_time %>
