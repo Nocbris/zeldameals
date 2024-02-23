@@ -17,6 +17,7 @@ header{
   text-align: center;
   width: 100%;
   height: 100%;
+  margin-bottom: 100px;
 }
 
 h1{
@@ -37,19 +38,18 @@ h3{
   font-size: 50px;
   font-weight: 30px;
   text-align: center;
-  font-family: 'HyliaSerifBeta-Regular';
+  font-family: 'Montserrat', sans-serif;
 }
 .img_rct{
   width:90%;
   height: 90%;
   max-width: 800px;
   max-height: 500px;
-
 }
 
 body {
   font-family: "Montserrat Alternates" ;
-  font-size: 20px;
+  font-size: 17px;
 }
 
 text {
@@ -58,9 +58,18 @@ text {
   gap: 2px;
 }
 
-@font-face {
-  font-family: 'Triforce'; /* Nom de la police que vous utiliserez dans votre feuille de style */
-  font-family: 'HyliaSerifBeta-Regular';
-  src: url('leyteire86/code/zeldameals/fonts/Triforce.ttf') format('ttf');
-  src: url('leyteire86/code/zeldameals/fonts/HyliaSerifBeta-Regular.otf') format('otf');
+.custom-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color:chocolate;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+  font-family: 'Montserrat';
+}
+
+.custom-button:hover {
+  background-color: red;
+  font-family: 'Montserrat';
 }
